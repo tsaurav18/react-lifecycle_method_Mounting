@@ -14,7 +14,10 @@ export default class App extends Component {
         console.log(props, state);
         return null;
     }
-    render() {
+    componentDidMount()
+{   // get data from server and set data to state
+    console.log("App componentdidmount");
+}    render() {
         console.log("App rendered")
         return (
             <div>
